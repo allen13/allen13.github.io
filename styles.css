@@ -162,8 +162,28 @@ nav {
     animation: fadeInUp 1s ease-out 0.9s backwards;
 }
 
+.cta-button {
+    padding: 1.2rem 2rem;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+}
+
 .cta-button.primary {
     background-color: var(--secondary-color);
+}
+
+.cta-button.primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
 }
 
 .cta-button.secondary {
@@ -174,6 +194,8 @@ nav {
 .cta-button.secondary:hover {
     background-color: white;
     color: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
 }
 
 @keyframes fadeInDown {
